@@ -126,8 +126,8 @@ def main(input1, input2):
         print "Method 4: Verification time: " + str(t6 - t5)
     
 if __name__ == "__main__":
-    input1 = sys.argv[0]
-    input2 = sys.argv[1]
+    input1 = sys.argv[1]
+    input2 = sys.argv[2]
     main(input1,input2)
 
 # input1 = "Caat"
