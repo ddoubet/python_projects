@@ -16,10 +16,6 @@
 import sys
 from time import time
 
-noMsg = "These two words are not an anagram"
-yesMsg = "These two words: %s, %s are an anagram"
-
-
 def getCharDict(word):
     """ Creates a dictionary of unique character keys with each
         character count as the value.
@@ -82,6 +78,10 @@ def sortCompare(word1, word2):
     return sorted(word1) == sorted(word2)
 
 def main(input1, input2):
+
+    noMsg = "These two words are not an anagram"
+    yesMsg = "These two words: %s, %s are an anagram"
+
     word1 = input1.lower(); print "Word 1: " + word1
     word2 = input2.lower(); print "Word 2: " + word2
     
@@ -125,10 +125,11 @@ def main(input1, input2):
         t6 = time()
         print "Method 4: Verification time: " + str(t6 - t5)
     
-#if __name__ == "__main__":
+if __name__ == "__main__":
     input1 = sys.argv[0]
     input2 = sys.argv[1]
     main(input1,input2)
-#input1 = "Caat"
-#input2 = "Aact"
-#main(input1,input2)
+
+# input1 = "Caat"
+# input2 = "Aact"
+# main(input1,input2)
