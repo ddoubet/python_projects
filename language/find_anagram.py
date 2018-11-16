@@ -8,9 +8,9 @@
 #
 # Case 1: Find if the words are an anagram: 'Cat' and 'Act'
 # Case 2: Apply for words: 'Caat' and 'Aact'
-# Case 3: Use only one dictionary and be performance optimization is important
+# Case 3: Use only one dictionary and be aware of performance, optimization is important
 # 
-# Unknown: Not sure if white space is allowed which would product a phrase and not a word
+# Unknown: Not sure if white space is allowed which would produce a phrase and not a word
 #
 
 import sys
@@ -62,7 +62,7 @@ def compareCharMapToWord(charDict, word):
     """
     isAnagram = False
     for char in word:
-        if (char not in charDict.keys() and 
+        if (char not in charDict.keys() or 
            charDict[char] != word.count(char)):
             break
     else:
